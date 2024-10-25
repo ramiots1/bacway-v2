@@ -80,20 +80,6 @@ body {
             box-shadow: 0px 0px 100px #0000009d;
         }
 
-        .contribute {
-            transition: ease-in-out 0.5s;
-            background-color: rgba(0, 0, 0, 0.366);
-            border: solid 1px rgba(255, 255, 255, 0.234);
-            color: white;
-            .contribute-button {
-                transition: ease-in-out 0.5s;
-                color: rgb(255, 255, 255);
-                border: solid 0.5px rgba(255, 255, 255, 0.478);
-            }
-            .contribute-button:hover {
-                background-color: rgba(255, 255, 255, 0);
-            }
-        }
     }
 }
 
@@ -258,6 +244,7 @@ header {
 }
 
 .intro {
+    overflow: hidden;
     margin-top: 15px;
     padding: 25px;
     .in-intro {
@@ -293,8 +280,12 @@ header {
         }
     
     .contribute {
+        overflow: hidden;
         transition: ease-in-out 0.5s;
         display: block;
+        background: url('Assets/contribute-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
         margin-inline: 4.5%;
         background-color: rgba(255, 255, 255, 0.497);
         padding: 10px;
@@ -302,27 +293,29 @@ header {
         border: solid 1px rgb(255, 255, 255);
         border-radius: 16px;
         width: 700px;
-        color: rgb(29, 29, 29);
+        color: rgb(255, 255, 255);
         p {
             font-weight: 300;
             margin: 10px;
             font-size: 17px;
         }
-        .arabic2 {
+        .arabic {
             text-align: right;
             font-size: 14px;
+            font-weight: 400;
         }
-        
         .contribute-button {
+            box-shadow: 0px 4px 10px #0000002a;
             transition: ease-in-out 0.5s;
             background-color: transparent;
-            color: rgb(29, 29, 29);
+            color: rgb(255, 255, 255);
             padding: 10px;
-            margin-top: 15px;
+            padding-inline: 30px;
+            margin-top: 0px;
             font-size: 14px;
             MARGIN-bottom: 15PX;
-            border: solid 0.5px rgba(0, 0, 0, 0.478);
-            border-radius: 7px;
+            border: solid 2px rgba(255, 255, 255, 0.478);
+            border-radius: 30px;
         }
     }
     .scrolldown {
@@ -350,7 +343,7 @@ header {
             p {
                 font-size: 13px;
             }
-            .arabic2 {
+            .arabic {
                 text-align: right;
                 font-size: 11px;
             }
@@ -372,8 +365,7 @@ header {
     }
     .contribute-button:hover {
         transition: ease-in-out 0.2s;
-        background-color: rgba(0, 0, 0, 0.093);
-        color: rgb(0, 0, 0);
+        background-color: rgba(255, 255, 255, 0.256);
         cursor: pointer;
     }
 }
@@ -450,6 +442,17 @@ header {
         }
     }
     
+}
+
+blue{
+    color: #0075C9;
+}
+blue2{
+    color: #0075C9;
+    text-shadow: 0px 0px 5px #0d8ce788;
+}
+green{
+    color: #00FFD1;
 }
 
 h4 {
