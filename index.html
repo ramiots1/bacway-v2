@@ -26,13 +26,36 @@
     </div>
 
     <header class="header">
+
         <a class="logo" href="index.html"></a>
         <div class="links" id="links">
-        <a class="home" href="index.html">Home</a>
-        <a class="about" href="about.html">About</a>
-        <a class="account" href="about.html"><div class="acc_icon"></div>Account</a>
+            <a class="home" href="index.html">Home</a>
+            <a class="about" href="about.html">About</a>
+            <a class="account" href="about.html"><div class="acc_icon"></div>Account</a>
         </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav id="mobileMenu" class="menu">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+              <li><a class="account" href="about.html"><div class="acc_icon"></div>Account</a></li>
+              <li><a class="sel" href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#"><div class="ig_icon"></div>BacWay.dz</a></li>
+            </ul>
+        </nav>
+
     </header>
+
+    
 
     <div class="intro" id="intro">
         <div class="in-intro">
