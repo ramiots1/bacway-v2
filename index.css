@@ -110,6 +110,9 @@ header {
     .menu-icon {
         display: none;
     }
+    .menu {
+        display: none;
+    }
 
     .logo{
         background-image: url(Assets/logo_1_dark.png);
@@ -209,11 +212,15 @@ header {
 
         /* Hide menu by default */
         .menu {
+            display: block;
             position: fixed;
-            top: 20px;
+            bottom: 0;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            overflow: hidden;
             right: 0;
             width: 250px;
-            height: 95vh;
+            height: 94vh;
             background-color: #ffffffdd;
             border: solid ;
             border-color: white;
